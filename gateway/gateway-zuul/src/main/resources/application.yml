@@ -17,6 +17,6 @@ eureka:
 zuul:
   routes:
     api-business-admin:
-      # 以 /api/consumer/user 开头的请求都转发给 consumer-user 服务
-      path: /api/consumer/user/**
+      # 以 /api/consumer/ 开头的请求都转发给 consumer-user 服务
+      path: /api/consumer/**
       serviceId: consumer-user

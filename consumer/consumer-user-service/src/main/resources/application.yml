@@ -5,7 +5,7 @@ spring:
     name: consumer-user
 
 server:
-  port: 12000
+  port: 12001
 
 eureka:
   instance:
@@ -20,3 +20,12 @@ eureka:
 feign:
   hystrix:
     enabled: true
+
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
