@@ -27,4 +27,4 @@ turbine:
     cluster-config: default
   # 用于替换源码 org.springframework.cloud.netflix.turbine.SpringClusterMonitor 中的收集端点
   # 我们配置的 Servlet 指向了 /hystrix.stream，Turbine 默认收集端点为 /actuator/hystrix.stream
-  instanceUrlSuffix: /hystrix.stream
+  instanceUrlSuffix: hystrix.stream
